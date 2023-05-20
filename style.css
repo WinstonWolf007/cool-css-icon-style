@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+ul li #firefox:hover {
+  color: #f4a261;
+  text-shadow: 0 0 5px #f4a261;
+  animation: forwards .2s popIn;
+}
+
+ul li #edge:hover {
+    color: #2a9d8f;
+    text-shadow: 0 0 5px #2a9d8f;
+    animation: forwards .2s popIn;
+}
+
+ul li #chrome:hover {
+    color: #e9c46a;
+    text-shadow: 0 0 5px #e9c46a;
+    animation: forwards .2s popIn;
+}
+
+ul li #opera:hover {
+    color: #d62828;
+    text-shadow: 0 0 5px #d62828;
+    animation: forwards .2s popIn;
+}
+
+@keyframes popIn {
+    0% {
+        font-size: 30px;
+    }
+    50% {
+        font-size: 35px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
